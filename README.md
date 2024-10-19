@@ -3,7 +3,8 @@
 ### Reg.No : 212221230092
 ### Exp.No : 01
 ### Date: 
-<h1> <align=center> SUM ARRAY ON HOST AND DEVICE </align> </h1>
+
+<h1 style="text-align:center;">SUM ARRAY ON HOST AND DEVICE</h1>
 
 
 PCA-GPU-based-vector-summation.-Explore-the-differences. </br>
@@ -180,7 +181,8 @@ int main(int argc, char **argv)
         sumArraysOnGPU<<<grid, block>>>(d_A, d_B, d_C, nElem);
         CHECK(cudaDeviceSynchronize());
         iElaps = seconds() - iStart;
-        printf("sumArraysOnGPU <<< %d, %d >>> Time elapsed %f sec\n", grid.x, block.x, iElaps);
+        printf("sumArraysOnGPU <<< %d, %d >>> Time elapsed %f sec\n", 
+        							grid.x, block.x, iElaps);
 
         // check kernel error
         CHECK(cudaGetLastError());
@@ -208,6 +210,8 @@ int main(int argc, char **argv)
     return(0);
 }
 ```
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
 ## OUTPUT:
  
